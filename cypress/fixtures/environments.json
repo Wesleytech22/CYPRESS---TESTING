@@ -1,0 +1,29 @@
+{
+    "qa": {
+        "url": "https://portal.qa.mdm-hub.com/login",
+        "users": {
+            "validUser": {
+                "usernameValid": "",
+                "passwordValid": ""
+            }
+        }
+    },
+    "hml": {
+        "url": "https://portal.hml.mdm-hub.com/login",
+        "users": {
+            "validUser": {
+                "usernameValid": "",
+                "passwordValid": ""
+            }
+        }
+    },
+    "production": {
+        "url": "https://portal.mdm-hub.com/login",
+        "users": {
+            "validUser": {
+                "usernameValid": "wesley.rodrigues@amazonasinovare.com.br",
+                "passwordValid": "Tectoy2026@"
+            }
+        }
+    }
+}
