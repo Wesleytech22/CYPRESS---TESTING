@@ -5,6 +5,31 @@
             "validUser": {
                 "usernameValid": "",
                 "passwordValid": ""
+            },
+            "invalidUser": {
+                "usernameInvalid": "Amazonas Inovare",
+                "passwordInvalid": "123456"
+            },
+            "rootUser": {
+                "usernameRoot": "root",
+                "passwordRoot": "Tectoy@2024"
+            }
+        }
+    },
+    "dev": {
+        "url": "https://portal.dev.mdm-hub.com/login",
+        "users": {
+            "validUser": {
+                "usernameValid": "",
+                "passwordValid": ""
+            },
+            "invalidUser": {
+                "usernameInvalid": "Amazonas Inovare",
+                "passwordInvalid": "123456"
+            },
+            "rootUser": {
+                "usernameRoot": "root",
+                "passwordRoot": "Tectoy@2024"
             }
         }
     },
@@ -14,6 +39,14 @@
             "validUser": {
                 "usernameValid": "",
                 "passwordValid": ""
+            },
+            "invalidUser": {
+                "usernameInvalid": "Amazonas Inovare",
+                "passwordInvalid": "123456"
+            },
+            "rootUser": {
+                "usernameRoot": "root",
+                "passwordRoot": "Tectoy@2024"
             }
         }
     },
@@ -23,6 +56,14 @@
             "validUser": {
                 "usernameValid": "wesley.rodrigues@amazonasinovare.com.br",
                 "passwordValid": "Tectoy2026@"
+            },
+            "invalidUser": {
+                "usernameInvalid": "Amazonas Inovare",
+                "passwordInvalid": "123456"
+            },
+            "rootUser": {
+                "usernameRoot": "root",
+                "passwordRoot": "Tectoy@2024"
             }
         }
     }
