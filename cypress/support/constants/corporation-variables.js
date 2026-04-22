@@ -1,5 +1,3 @@
-// support/constants/corporation-variables.js
-
 export const CORPORATION_VARIABLES = {
     SELECTORS: {
         MENU: 'li:nth-child(4) .MuiListItemText-root .MuiTypography-root',
