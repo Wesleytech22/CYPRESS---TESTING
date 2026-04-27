@@ -35,7 +35,7 @@ Cypress.Commands.add('createCorporation', (corporationData = TEST_DATA.VALID_COR
 
     cy.xpath(SELECTORS.SAVE_BTN_CORPORATION).click();
 
-    cy.contains('Corporação criada com sucesso', { timeout: TIMEOUTS.API_RESPONSE })
+    cy.contains('Cadastro criada com sucesso', { timeout: TIMEOUTS.API_RESPONSE })
         .should('be.visible');
 
     cy.url().should('include', '/gestao-de-organizacao/corporacao');
