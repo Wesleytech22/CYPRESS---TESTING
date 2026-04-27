@@ -17,7 +17,6 @@ describe('Login Test', () => {
     })
 })
 
-// Comando de login com retorno da configuração (qa)
 Cypress.Commands.add('loginGetConfigQA', (environment = 'qa') => {
     return cy.fixture('environments.json').then((environments) => {
         const environmentConfigQA = environments[environment]
@@ -32,7 +31,27 @@ Cypress.Commands.add('loginGetConfigQA', (environment = 'qa') => {
     })
 })
 
-// Comando de login com retorno da configuração (dev)
+Cypress.Commands.add('loginGetConfigQAWithoutCredencials', () => {
+    return cy.fixture('environments.json').then((environment) => {
+        const environmentConfigQAWithoutCredencials = environment['qa']
+
+        cy.visit(environmentConfigQAWithoutCredencials.url)
+        cy.title().should('include', 'MDM-Hub')
+        cy.xpath('//div[@id=\'root\']//button[contains(text(), \'Entrar\')]').click()
+
+        cy.get('#\\:r0\\:-helper-text')
+            .should('be.visible')
+            .and('contain', 'Campo obrigatório')
+
+        cy.get('#\\:r1\\:-helper-text')
+            .should('be.visible')
+            .and('contain', 'Campo obrigatório')
+
+        return cy.wrap(environmentConfigQAWithoutCredencials)
+    })
+})
+
+
 Cypress.Commands.add('loginGetConfigDev', (environment = 'dev') => {
     return cy.fixture('environments.json').then((environments) => {
         const environmentConfigDev = environments[environment]
@@ -47,7 +66,6 @@ Cypress.Commands.add('loginGetConfigDev', (environment = 'dev') => {
     })
 })
 
-// Comando de login com retorno da configuração (hml)
 Cypress.Commands.add('loginGetConfigHml', (environment = 'hml') => {
     return cy.fixture('environments.json').then((environments) => {
         const environmentConfigHml = environments[environment]
@@ -62,7 +80,6 @@ Cypress.Commands.add('loginGetConfigHml', (environment = 'hml') => {
     })
 })
 
-// Comando de login com retorno da configuração (production)
 Cypress.Commands.add('loginAndGetConfigProd', (environment = 'production') => {
     return cy.fixture('environments.json').then((environments) => {
         const environmentConfigProd = environments[environment]

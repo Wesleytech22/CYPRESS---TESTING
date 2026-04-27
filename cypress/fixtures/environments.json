@@ -1,10 +1,10 @@
 {
     "qa": {
-        "url": "https://portal.qa.mdm-hub.com/login",
+        "url": "https://portal.qa.mdm-hub.com.br/login",
         "users": {
             "validUser": {
-                "usernameValid": "",
-                "passwordValid": ""
+                "usernameValid": "WesleyMD",
+                "passwordValid": "Wesley5803@"
             },
             "invalidUser": {
                 "usernameInvalid": "Amazonas Inovare",
@@ -13,6 +13,10 @@
             "rootUser": {
                 "usernameRoot": "root",
                 "passwordRoot": "Tectoy@2024"
+            },
+            "withoutCredencials": {
+                "usernameEmpty": "",
+                "passwordEmpty": ""
             }
         }
     },
