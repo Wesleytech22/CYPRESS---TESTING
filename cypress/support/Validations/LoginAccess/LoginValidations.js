@@ -28,9 +28,17 @@ class LoginValidations {
     }
 
     validateSuccessfulLogin() {
-        cy.url().should('not.include', '/login')
-        cy.get('.MuiTypography-root').should('contain', 'Dashboard')
-        return this
+        cy.wait(3000);
+
+        cy.url().then((url) => {
+            cy.log('URL atual após login:', url);
+        });
+
+        cy.url({ timeout: 15000 }).should('not.include', '/login');
+        cy.url({ timeout: 10000 }).should('include', '/painel');
+        cy.get('.MuiBreadcrumbs-root', { timeout: 10000 }).should('be.visible');
+        cy.get('body').should('not.contain', 'Digite seu e-mail ou usuário');
+        return this;
     }
 
     validateLogout() {

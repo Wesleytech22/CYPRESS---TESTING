@@ -1,6 +1,7 @@
 // cypress/support/commands.js
 
 import './commands/loginAccess/login_commands.js'
+import './commands/organiz_management/Corporation_commands.js'
 
 Cypress.Commands.add('loginGetConfigQA', (environment = 'qa') => {
     return cy.fixture('environments.json').then((environments) => {

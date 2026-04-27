@@ -2,16 +2,17 @@
 
 export const CORPORATION_VARIABLES = {
     SELECTORS: {
+        MENU_GESTAO_ORGANIZACAO: ':nth-child(4) > .css-cvadtk > .MuiButtonBase-root',
+        SUBMENU_CORPORACAO: ':nth-child(4) > :nth-child(2) > .MuiCollapse-wrapper > .MuiCollapse-wrapperInner > .MuiListItem-root > .MuiButtonBase-root',
         MENU: 'li:nth-child(4) .MuiListItemText-root .MuiTypography-root',
         CORPORATION_OPTION: 'li:nth-child(4) .MuiListItemText-root .MuiTypography-root',
-        CREATE_BTN_CORPORATION: '//div[@id="root"]//a[contains(text(), "New")]',
-        SAVE_BTN_CORPORATION: '//div[@id="root"]//button[contains(text(), "Save")]',
+        CREATE_BTN_CORPORATION: '//div[@id="root"]//a[contains(text(), "Novo")]',
+        SAVE_BTN_CORPORATION: '//div[@id="root"]//button[contains(text(), "Salvar")]',
         CANCEL_BTN_CORPORATION: '//div[@id="root"]//button[contains(text(), "Cancel")]',
         DELETE_BTN_CORPORATION: '[data-testid="delete-corporation-btn"]',
         EDIT_BTN_CORPORATION: '[data-testid="edit-corporation-btn"]',
         SEARCH_INPUT_CORPORATION: 'input[placeholder="Search for corporations"]',
-        CORPORATION_LIST: '//div[@aria-multiselectable="true"]//p[contains(text(), "Corporation List")]',
-
+        CORPORATION_LIST: '//div[@aria-multiselectable="true"]//p[contains(text(), "Lista de Corporações")]',
         FIELD_CORPORATION: 'input[name="name"]',
         FIELD_CONTRACT: 'input[name="limitEquipmentsActive"]',
         FIELD_INTEGRATION_CONTRACT_NUMBER: 'input[name="integrationContract"]',
@@ -58,7 +59,7 @@ export const CORPORATION_VARIABLES = {
 
     TEST_DATA: {
         VALID_CORPORATION: {
-            corporation: 'Cypress_teste',
+            corporation: 'Cypress',
             contract: '2',
             integrationContractNumber: '123456'
         },
@@ -88,7 +89,6 @@ export const CORPORATION_VARIABLES = {
     }
 };
 
-// Exportações separadas
 export const SELECTORS = CORPORATION_VARIABLES.SELECTORS;
 export const MESSAGES_SUCCESS = CORPORATION_VARIABLES.MESSAGES_SUCCESS;
 export const MESSAGES_ERROR = CORPORATION_VARIABLES.MESSAGES_ERROR;
