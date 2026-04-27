@@ -1,1 +1,5 @@
-// TODO: Implement e2e test for Company
+describe('Gestão de Organização - Empresa', () => {
+    beforeEach(() => {
+
+    });
+});
