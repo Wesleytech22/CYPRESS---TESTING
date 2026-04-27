@@ -3,8 +3,5 @@
 // loaded automatically before your test files.
 // ***********************************************************
 
-// Import commands.js using ES2015 syntax:
 import './commands'
-
-// Import the XPath library
 import 'cypress-xpath';
